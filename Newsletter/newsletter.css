@@ -1,0 +1,359 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-family: "Oswald", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  font-size: 16px;
+  font-family: "Oswald", sans-serif;
+}
+
+.hero-BG {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: url(../Assets/news-letter/Newsletter-Hero.jpg);
+  background-position: center;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 4rem;
+}
+
+header {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  padding: 1.2em 3.5em;
+}
+header .logo {
+  display: flex;
+  align-items: center;
+}
+header .logo img {
+  width: 42px;
+  height: 42px;
+}
+header .logo h1 {
+  font-weight: 700;
+  font-size: 28px;
+  text-transform: uppercase;
+  color: white;
+}
+header .logo * + * {
+  margin-left: 0.5em;
+}
+header nav {
+  width: 20%;
+}
+header nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style-type: none;
+  text-transform: uppercase;
+}
+header nav a {
+  color: white;
+  position: relative;
+}
+header nav a:hover {
+  color: white;
+}
+header nav a:hover::before {
+  transform: scaleX(1);
+}
+header nav a::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+header .blank {
+  padding-right: 14em;
+}
+
+.hero {
+  padding: 2em;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.hero * + * {
+  margin: 1.1em;
+}
+.hero .button-1 {
+  width: 5em;
+  background-color: white;
+  border: none;
+  padding: 1em 8em;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  white-space: nowrap;
+  font-weight: 400;
+}
+.hero .button-1 a {
+  font-family: "oswald";
+  font-weight: 400;
+  color: black;
+  font-size: 24px;
+}
+.hero .button-1:hover {
+  background-color: rgb(236, 236, 236);
+  cursor: pointer;
+}
+.hero h2 {
+  font-weight: 700;
+  font-size: 60px;
+  text-transform: uppercase;
+  color: white;
+}
+
+.title {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 3rem;
+  text-shadow: -1px 3px 6px rgba(0, 0, 0, 0.25);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+.form-container {
+  display: flex;
+  margin-top: 2rem;
+  flex-direction: row;
+  width: auto;
+  height: 600px;
+  box-shadow: 0px 8px 31px rgba(0, 0, 0, 0.25);
+}
+.form-container .img-wrap {
+  overflow: hidden;
+}
+.form-container img {
+  width: 100%;
+  transition: 5s all ease-in-out;
+}
+.form-container img:hover {
+  transform: scale(1.2);
+}
+.form-container img {
+  width: 400px;
+  height: 600px;
+}
+.form-content {
+  display: flex;
+  flex-direction: column;
+  padding: 3.5rem 2.5rem;
+}
+
+.field {
+  background-color: #EFF0F2;
+  height: 3rem;
+  width: 28rem;
+  border: solid 1px #EFF0F2;
+  border-radius: 3px;
+  padding: 0 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+input::-moz-placeholder {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  color: rgb(131, 131, 131);
+}
+
+input:-ms-input-placeholder {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  color: rgb(131, 131, 131);
+}
+
+input::placeholder {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  color: rgb(131, 131, 131);
+}
+
+label {
+  color: black;
+  font-weight: 400;
+}
+
+.check-box {
+  font-weight: 300;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+}
+
+.tick-box {
+  margin-bottom: 2rem;
+}
+.tick-box input {
+  cursor: pointer;
+}
+.tick-box label {
+  cursor: pointer;
+}
+
+.subs {
+  width: 18rem;
+  border: 1px solid black;
+  background-color: white;
+  color: black;
+  border-radius: 5px;
+  padding: 1rem;
+  font-size: 1.2rem;
+  font-family: "Oswald", sans-serif;
+}
+.subs:hover {
+  color: white;
+  background-color: black;
+  cursor: pointer;
+}
+
+footer {
+  background-color: rgb(51, 51, 51);
+  padding: 3rem 4rem;
+}
+
+.container-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.container-footer a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer-content {
+  display: flex;
+  width: 20rem;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 0;
+}
+.footer-content img {
+  width: 90px;
+  height: 90px;
+}
+.footer-content ul {
+  font-weight: 300;
+  line-height: 3rem;
+  list-style-type: none;
+  text-transform: uppercase;
+}
+.footer-content ul a:hover {
+  font-weight: 400;
+}
+
+.social-media {
+  padding-top: 1.6rem;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+.social-media h5 {
+  font-weight: 400;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.social-1 {
+  padding: 0;
+  line-height: 0;
+  margin-bottom: 1rem;
+  display: flex;
+}
+
+.social-2 {
+  display: flex;
+  align-items: center;
+  margin-right: 1em;
+  width: 7rem;
+}
+.social-2 img {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 0.5rem;
+}
+.social-2 a {
+  font-weight: 200;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+.social-2 a:hover {
+  font-weight: 400;
+}
+
+.news-offer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 2rem 0;
+}
+.news-offer h4 {
+  font-weight: 400;
+  font-size: 2.5rem;
+  color: white;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+.news-offer button {
+  width: 10rem;
+  padding: 0.5rem 0.7rem;
+  border-radius: 5px;
+  background-color: white;
+}
+.news-offer button a {
+  font-size: 1.2rem;
+  color: black;
+}
+.news-offer button:hover {
+  background-color: rgb(236, 236, 236);
+  cursor: pointer;
+}
